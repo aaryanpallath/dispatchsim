@@ -1,0 +1,32 @@
+[
+ {
+  "policy": "greedy, pickup cap 5 min",
+  "fleet": 4000,
+  "requests": 61796,
+  "completed_pct": 75.2,
+  "unfulfilled_pct": 24.8,
+  "wait_p50_s": 337.0,
+  "wait_p90_s": 449.9,
+  "pickup_eta_mean_s": 166.7,
+  "match_wait_mean_s": 127.6,
+  "deadhead_share_pct": 18.6,
+  "utilization_pct": 89.5,
+  "match_ms_p50": 9.435,
+  "match_ms_p99": 21.02
+ },
+ {
+  "policy": "greedy, pickup cap 5 min",
+  "fleet": 6500,
+  "requests": 61796,
+  "completed_pct": 100.0,
+  "unfulfilled_pct": 0.0,
+  "wait_p50_s": 181.9,
+  "wait_p90_s": 335.4,
+  "pickup_eta_mean_s": 137.0,
+  "match_wait_mean_s": 31.8,
+  "deadhead_share_pct": 15.7,
+  "utilization_pct": 71.6,
+  "match_ms_p50": 2.078,
+  "match_ms_p99": 15.585
+ }
+]

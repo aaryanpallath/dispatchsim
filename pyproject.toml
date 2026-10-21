@@ -1,0 +1,25 @@
+[project]
+name = "dispatchsim"
+version = "0.1.0"
+description = "Ride-hailing dispatch on real NYC taxi demand: H3 spatial index, greedy vs batched matching, and the batching-window tradeoff"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "pandas>=2.2", "pyarrow>=15", "scipy>=1.11", "h3>=4.1", "shapely>=2.0", "pyproj>=3.6", "pyshp>=2.3", "matplotlib>=3.8"]
+
+[project.scripts]
+dispatchsim = "dispatchsim.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
